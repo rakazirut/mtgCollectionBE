@@ -12,7 +12,7 @@ const generateJWT = (account) => {
   let jwtSecretKey = process.env.JWT_SECRET_KEY;
   let data = {
     time: moment.now().valueOf(),
-    accountId: account.account_id,
+    account_id: account.account_id,
     username: account.username
   };
 
